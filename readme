@@ -1,1 +1,37 @@
+1.🚀 Kubernetes Services Project
+📌 Overview
+
+This project demonstrates different Kubernetes Service types used to expose and access applications:
+
+ClusterIP – Internal communication within the cluster
+NodePort – Access application using Node IP and port
+LoadBalancer – Exposes application to external users (internet)
+
+🧱 Technologies Used
+Kubernetes
+kubectl
+YAML configuration files
+
+1. ClusterIP (Default Service)
+ClusterIP exposes the service only inside the Kubernetes cluster.
+It cannot be accessed from outside the cluster.
+==> working of clusterIP
+Gives a virtual internal IP
+Other Pods inside cluster can access it
+External users cannot access it
+
+2. NodePort
+NodePort exposes the service on a specific port on every worker node.
+==> WORKING
+Opens a port (30000–32767)
+Works on all nodes in cluster
+Routes traffic to Pods
+
+3. LoadBalancer
+LoadBalancer exposes the service externally using a cloud provider’s load balancer.
+==>WORKING
+Creates an external IP automatically (AWS, Azure, GCP)
+Routes traffic to Kubernetes service
+Works like a real production entry point
+
 
