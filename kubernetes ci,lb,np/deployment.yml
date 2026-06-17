@@ -14,7 +14,7 @@ spec:
       spec:
          containers:
             - name:  appcont1 
-              image: httpd:latest  #v1 
+              image: ngnix:latest  #v1 
               ports:
                 - containerPort: 80
   selector:
